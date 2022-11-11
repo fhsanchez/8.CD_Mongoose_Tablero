@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sálvemos a las Nutrias</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        function url(){            
+            document.location.href = '/form_nutria';
+        }
+    </script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>Ayúdanos a mantener (CRUD) las Nutrias</h1>
+            <img src="nutrias.png" alt="Salvemos a las nutrias!">
+            <input type="button" class="btnAgregar" value="Agregar Nutria"
+             onclick="url();">
+        </header>
+
+        <section class="principal">
+
+            <table class="grilla">
+                <tr>
+                    <th class="nombre">NOMBRE</th>
+                    <th class="edad">EDAD</th>
+                    <th class="peso">PESO (Kg)</th>
+                    <th class="ubicacion">UBICACION</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <% for(let i in otters){%>
+                <tr>
+                    <td><%= otters[i].name %></td>
+                    <td><%= otters[i].age %></td>
+                    <td><%= otters[i].weight %></td>
+                    <td><%= otters[i].location %></td>
+                    <td><a class="editar" href="/edit/<%= otters[i]._id%>">Editar</a></td>
+                    <td><a class="eliminar" href="/delete/<%= otters[i]._id%>">Eliminar</a></td>
+                </tr>
+              <% } %>
+            </table>
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>

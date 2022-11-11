@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: cornflowerblue;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnAgregar {
+  margin-top: 30px;
+  color: white;
+  width: 120px;
+  height: 34px;
+  background-color: rgb(0, 60, 255);
+  border: 1px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  /*border: 1px solid red;*/
+  margin-bottom: 20px;
+}
+
+header img {
+  margin-top: 20px;
+  width: 200px;
+  border-radius: 75%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 300px;
+  border: 1px solid rgb(45, 74, 153);
+}
+
+div {
+  
+   display: flex;
+  justify-content: space-around;
+  height: 30px;
+  margin-top: 10px;
+}
+
+label {
+  width: 100px;
+}
+div input, select {
+  width: 200px;
+}

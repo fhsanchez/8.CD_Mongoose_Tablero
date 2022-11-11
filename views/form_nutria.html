@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso/Edicion de Nutrias</title>
+    <link rel="stylesheet" href="../static/form_styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h3>Mantención Nutrias</h3>
+            <img src="../static/nutrias.png" alt="Salvemos a las nutrias!">
+
+        </header>
+
+        <section class="principal">
+            <form action="/form_nutria" method="post">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" value="">
+                </div>
+                <div>
+                    <label for="age">Edad</label>
+                    <input type="text" name="age" value="">
+                </div>
+                <div>
+                    <label for="weight">Peso</label>
+                    <input type="text" name="weight" value="">
+                </div>
+                <div>
+                    <label for="language">Ubicación:</label>
+                    <select id="location" name="location">
+                        <option value="Asia">Asia</option>
+                        <option value="America">America</option>
+                        <option value="Africa">Africa</option>
+                        <option value="Antartida">Antartida</option>
+                        <option value="Europa">Europa</option>
+                        <option value="Oceania">Oceania</option>
+                    </select>
+                </div>
+
+                <input type="submit" class="btnAgregar" value="Agregar Nutria">
+            </form>
+            
+
+        </section>
+    </main>
+
+
+</body>
+
+</html>
